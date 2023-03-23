@@ -1,9 +1,74 @@
 <!-- https://supersimple.dev/courses -->
 <style>
-button{
-    background-color: red;
-    color: white;
 
+
+
+.subscribe-button{
+    background-color: rgb(170, 32, 32);
+    color: white;
+    border: none;
+    /* top right bottom left */
+    padding: 8px 10px 8px 10px; 
+    border-radius: 2px;
+    cursor: pointer;
+    /* transition effect , takes two param ,
+     first what style and second how long will it should take */
+    transition: opacity 1s;
+    /* height: 36px;
+    width: 105px;     */
 }
+
+.subscribe-button:hover{
+    /* background-color: rgb(70, 162, 81); */
+    /* opacity 1 means make it full visible  0 means make it full transparent*/
+    opacity: 0.8;
+}
+/* when clicked */
+.subscribe-button:active{
+    /* background-color: rgb(207, 158, 133); */
+    opacity: 0.6;
+}
+
+.tweet-button{
+    padding: 8px 10px 8px 10px; 
+    color: white;
+    background-color: rgb(71, 152, 227);
+    border-style: none;
+    width: 70px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.join-button{
+    border-color: rgb(141, 141, 246);
+    background-color: white;
+    padding: 8px 10px 8px 10px; 
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color:blue;
+    cursor: pointer;
+    /* transition effect a background color when hovered */
+    /* separate with comma when multiple style transition effect is wanted */
+    transition: background-color 1s, color 1s;
+}
+
+.join-button:hover{
+    background-color: rgb(141, 141, 246);
+    color: white;
+}
+
+.tweet-button:hover{
+    /* horizontal vertical blur color */
+    /* rgba last a part denotes opacity */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
 </style>
-<button>SUBSCRIBE</button>
+<button class="subscribe-button">SUBSCRIBE</button>
+
+<button class="join-button">JOIN</button>
+
+<button class="tweet-button">Tweet</button>
