@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position practice</title>
+</head>
+<body style="
+height: 1000px; margin: 0;
+/* creating space for header and start other element after header */
+padding-top: 30px;
+">
+
+    <div style="
+    background-color: black;
+    height: 30px;
+    color: white;
+    /* position properties */
+    position: fixed;
+    top: 0px;   /*  where to position from top */
+    left: 0px;
+    right: 0px;
+    
+
+    ">
+        Header
+    </div>
+
+    <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    ">
+        div1
+    </div>
+    <div style="
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    "
+    >
+        div2
+    </div>
+
+    <div style="
+    background-color: black;
+    height: 30px;
+    color: white;
+    
+    /* 
+    interesting feature 
+    when oppsite settings are set . e.g. left: 50px and right 20px;
+    it will make the element stretch leaving left 50px and right 20px;
+    */
+    position: fixed;
+    top: 300px;
+    left: 50px;
+    right: 30px;
+    ">
+        Streching header
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.sidebar{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 56px;
+    width: 72px;
+  
+}
+
+.sidebar-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.sidebar-btn{
+    height: 64px;
+    width: 60px;
+    padding-bottom: 14px;
+    padding-top: 16px;
+    border: none;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sidebar-btn:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.sidebar-btn-label{
+    font-family: Roboto,Arial;
+    font-size: 10px;
+    text-align: center;
+}
+
+.sidebar-home-btn{
+
+}
+.sidebar-home-icon{
+    height: 25px;
+}
+
+.sidebar-play-btn{
+
+}
+.sidebar-play-icon{
+    height: 25px;
+}
+
+.sidebar-subs-btn{
+
+}
+.sidebar-subs-icon{
+    height: 25px;
+}
+
+.sidebar-video-library-btn{
+
+}
+.sidebar-video-library-icon{
+    height: 25px;
+}

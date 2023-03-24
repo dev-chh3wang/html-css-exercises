@@ -1,5 +1,9 @@
 body{
     margin: 0;
+    /* make space for header */
+    padding-top: 80px;
+    /* make space for sidebar */
+    padding-left: 80px;
 }
 p{
     font-family: Roboto, Arial;
