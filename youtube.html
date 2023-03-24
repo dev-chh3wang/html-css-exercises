@@ -14,22 +14,24 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-        .thumbnail {
-            width: 300px;
-            /* height: 165px; */
-            /* object-fit and object-position works with img tag
-                object-fit check-out object-fit options
-                object-position other options
-            */
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
-
+        
         .search-bar {
             font-size: 20px;
             margin-left: 12px;
             display: block;
+        }
+
+        .videos-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+        }
+
+        .thumbnail {
+            /* take full size of the container */
+            width: 100%;
+            
         }
 
         .video-title {
@@ -42,21 +44,20 @@
         }
 
         .video-preview {
-            width: 300px;
-            /* by default div is block */
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 15px;
+            /* take full size of the container . i.e grid column */
+             width: 100%; 
+            
         }
         .channel-pic{
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
-        }
-        .video-info{
-            display: inline-block;
             
-            width: 230px;
+        }
+
+        .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+    
+        .video-info{
         }
         .profile-pic{
             /* take the whole size of the container . i.e. div width */
@@ -97,44 +98,161 @@
         ### 3. inline element = appear within a line of text .
         for e.g. span , strong, bold
     -->
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnails/pic1.webp">
-        </div>
-        <div>
-            <!-- two horizontal box -->
-            <div class="channel-pic">
-                <!-- img -->
-                <img class="profile-pic" src="icons/channels4_profile.jpg">
+    <div class="videos-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic1.webp">
             </div>
-            <div class="video-info">
-                <!-- title, channel name, stats -->
-                <p class="video-title">
-                    Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
-                </p>
-                <p class="video-author">
-                    HALIDONMUSIC
-                </p>
-                <p class="video-stats">622K views &#183; 6 months ago</p>
-
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/channels4_profile.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                        Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
+                    </p>
+                    <p class="video-author">
+                        HALIDONMUSIC
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
             </div>
-
+            
             
         </div>
-        
-        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic2.webp">
+            </div>
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/music2.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                        Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
+                    </p>
+                    <p class="video-author">
+                        Another Author
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
+            </div>    
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic3.webp">
+            </div>
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/unnamed.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                        Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
+                    </p>
+                    <p class="video-author">
+                        Another Author
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
+            </div>    
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic4.webp">
+            </div>
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/tree.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                        Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
+                    </p>
+                    <p class="video-author">
+                        Another Author
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
+            </div>    
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic5.webp">
+            </div>
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/unnamed.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                        Ambient Study Music To Concentrate - Music for Studying, Concentration and Memory
+                    </p>
+                    <p class="video-author">
+                        Another Author
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
+            </div>    
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/pic6.webp">
+            </div>
+            <div class="video-info-grid">
+                <!-- two horizontal box -->
+                <div class="channel-pic">
+                    <!-- img -->
+                    <img class="profile-pic" src="icons/tree.jpg">
+                </div>
+                <div class="video-info">
+                    <!-- title, channel name, stats -->
+                    <p class="video-title">
+                       DW Grossestreik soll Verkehr lahmlegen
+                    </p>
+                    <p class="video-author">
+                        Another Author
+                    </p>
+                    <p class="video-stats">622K views &#183; 6 months ago</p>
+    
+                </div>
+    
+                
+            </div>    
+        </div>
     </div>
-    <div class="video-preview">
-
-        <img class="thumbnail" src="images/thumbnails/pic2.webp">
-        <p class="video-title">
-            Chill Music for Work and Creativity 
-        </p>
-        <p>
-            Chill Music Lab
-        </p>
-        <p>1.2M views &#183; 1.2 months ago</p>
-    </div>
+    
 </body>
 
 </html>

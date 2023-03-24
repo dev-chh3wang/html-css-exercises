@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+</head>
+<body style="padding-bottom: 300px;">
+    
+    <div style="display: grid; grid-template-columns: 100px 100px;">
+        <div style="background-color: aqua;">div 1</div>
+        <div style="background-color: beige;">div 2<p>Additional text</p></div>
+    </div>
+
+
+    <div style="display: grid; grid-template-columns: 100px 100px 200px; margin-top: 10px;">
+        <div style="background-color: aqua;">col 1</div>
+        <div style="background-color: beige;">col 2</div>
+        <div style="background-color:aquamarine;">col  3</div>
+    </div>
+
+
+    <div style="display: grid; grid-template-columns: 100px 1fr; margin-top: 10px;">
+        <div style="background-color: aqua;">col 1</div>
+        <div style="background-color: beige;">1fr (take remaining free space)</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 1fr 1fr; margin-top: 10px;">
+        <div style="background-color: aqua;">col 1</div>
+        <div style="background-color: beige;">1fr</div>
+        <div style="background-color: blueviolet;">1fr</div>
+    </div>
+
+    <div style="
+    display: grid; 
+    grid-template-columns: 100px 1fr 2fr; 
+    column-gap: 5px;
+    margin-top: 10px;">
+        <div style="background-color: aqua;">col 1</div>
+        <div style="background-color: beige;">1fr</div>
+        <div style="background-color:blueviolet;">2fr (2x as 1fr)</div>
+    </div>
+    <div style="
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 10px;">
+        <div style="background-color: aqua; height: 200px;">1 fr</div>
+        <div style="background-color: beige;height: 200px;">1fr</div>
+        <div style="background-color:blueviolet;height: 200px;">1fr</div>
+        <div style="background-color:blueviolet;height: 200px;">1fr overflowed columns</div>
+        <div style="background-color: beige;height: 200px;">1fr  overflowed columns</div>
+        <div style="background-color: aqua; height: 200px;">1 fr  overflowed columns</div>
+    </div>
+
+    
+
+</body>
+</html>
