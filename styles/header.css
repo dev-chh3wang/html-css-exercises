@@ -1,0 +1,120 @@
+
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    flex: 1;
+    margin-right: 35px;
+    /* limit the flex width */
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.search-bar{
+    flex: 1;
+    height: 28px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgb(193, 193, 193);
+    
+    box-shadow: inset 1px 2px 2px rgba(0,0,0,0.15);
+    /* allow shrink only works in flex*/
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.youtube-logo{
+    height: 45px;
+}
+
+.search-icon{
+    height: 24px;
+    margin-top: 2px;
+}
+.search-button{
+    width: 60px;
+    height: 32px;
+    background-color: #F6F6F6;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-color: rgb(193, 193, 193);
+    margin-left: -2px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+}   
+.voice-search-button{
+    border-radius: 25px;
+    border:none;
+    background-color:#F7F7F7 ;
+    cursor: pointer;
+
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin-right: 20px;
+    /* prevent from shrinking */
+    flex-shrink: 0;
+}
+
+.video-add-btn{
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.video-add-icon{
+    height: 24px;
+}
+
+.bell-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bell-icon{
+    height: 24px;
+}
+.yt-channel-pic{
+    height: 24px;
+}
+.profile-btn{
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+

@@ -7,97 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
 
-    <style>
-        
-        p{
-            font-family: Roboto, Arial;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        
-        .search-bar {
-            font-size: 20px;
-            margin-left: 12px;
-            display: block;
-        }
-
-        .videos-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 15px;
-            row-gap: 40px;
-        }
-
-        .thumbnail {
-            /* take full size of the container */
-            width: 100%;
-            
-        }
-
-        .video-title {
-            /* by default some margin are set */
-            margin-top: 0;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            margin-bottom: 10px;
-        }
-
-        .video-preview {
-            /* take full size of the container . i.e grid column */
-             width: 100%; 
-            
-        }
-        .channel-pic{
-            
-        }
-
-        .video-info-grid{
-            display: grid;
-            grid-template-columns: 50px 1fr;
-        }
-    
-        .video-info{
-        }
-        .profile-pic{
-            /* take the whole size of the container . i.e. div width */
-            width: 40px;
-            border-radius: 50px;
-        }
-        .thumbnail-row{
-            margin-bottom: 12px;
-        }
-
-        .video-author ,
-        .video-stats{
-            font-size: 12px;
-            color: rgb(96, 96, 96);
-        }
-        .video-author{
-            margin-bottom: 6px;
-        }
-    </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/general.css">
 </head>
 
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
-    <!-- 
-        1. block-element
-        paragraph element is a "block" element
-        takes up the entire row or line.
-        they are force to take up the whole row
 
+    <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="yt-icons/hamburge.svg">
+            <img class="youtube-logo" src="yt-icons/ytIcon.webp">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="yt-icons/search_icon.svg">
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="yt-icons/voice-search-icon.svg" >
+            </button>
+            
+        </div>
+        <div class="right-section">
+            <button class="video-add-btn"><img class="video-add-icon" src="yt-icons/video_add_icon.svg"></button>
+            <button class="bell-btn"><img class="bell-icon" src="yt-icons/alarm_bell.svg"></button>
+            <button class="profile-btn"><img class="yt-channel-pic" src="yt-icons/unnamed.jpg"></button>
+            <img>
+        </div>
+    </div>
+    
 
-        ### 2. inline-block element = only takes up as much space as needed
-        e.g. img, input .. 
-
-        ### 3. inline element = appear within a line of text .
-        for e.g. span , strong, bold
-    -->
     <div class="videos-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
