@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position practice</title>
+
+    <style>
+        .code {
+            background: #f4f4f4;
+            color: #666;
+            font-family: monospace;
+            white-space: pre-line;
+        }
+        .highlight{
+            background-color: lightgreen;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body style="
 height: 1000px; margin: 0;
 /* creating space for header and start other element after header */
 padding-top: 30px;
+padding-left: 50px;
 ">
 
     <div style="
@@ -21,12 +36,38 @@ padding-top: 30px;
     top: 0px;   /*  where to position from top */
     left: 0px;
     right: 0px;
-    
+
 
     ">
         Header
     </div>
+    <div style="
+    background-color: blueviolet;
+    position:fixed;
+    top:30px;
+    bottom:0px;
+    left:0px;
+    width: 50px;
+    ">
+        sidebar
 
+        <div style="
+                background-color: red;
+                position: absolute;
+                color:white;
+    ">
+    <p style="font-size: small;">absolute - relative to sidebar</p>
+    </div>
+    </div>
+    
+
+    <div style="
+    background-color: red;
+    position: absolute;
+    color:white;
+    ">
+    absolute
+    </div>
     <div style="
     background-color: lightblue;
     height: 200px;
@@ -36,12 +77,37 @@ padding-top: 30px;
     </div>
     <div style="
     background-color: pink;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 400px;
+    position: relative;
     "
     >
         div2
+        <p class="code">
+        height: 300px;
+        width: 400px;
+        <span class="highlight">position: relative;</span>
+</p>
+        <div style="
+        background-color: red;
+        color:white;
+        position: absolute;
+        bottom: 80px;
+        right: 10px;
+        width: 150px;
+        height: 70px;
+        ">
+        absolute to relative div 2
+        <p class="code">
+        <span class="highlight">position: absolute;</span>
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+        height: 70px;
+        </p>
+        </div>
     </div>
+   
 
     <div style="
     background-color: black;
@@ -54,11 +120,13 @@ padding-top: 30px;
     it will make the element stretch leaving left 50px and right 20px;
     */
     position: fixed;
-    top: 300px;
+    top: 800px;
     left: 50px;
     right: 30px;
     ">
         Streching header
     </div>
+
+   
 </body>
 </html>
