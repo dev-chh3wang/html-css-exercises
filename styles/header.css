@@ -65,7 +65,6 @@
 
 .search-icon{
     height: 24px;
-    margin-top: 2px;
 }
 .search-button{
     width: 60px;
@@ -77,19 +76,24 @@
     border-color: rgb(193, 193, 193);
     margin-left: -2px;
     cursor: pointer;
-    margin-right: 6px;
 }
+
+
+
+
 .voice-search-icon{
     height: 24px;
-    margin-top: 4px;
+    
 }   
 .voice-search-button{
     border-radius: 25px;
     border:none;
     background-color:#F7F7F7 ;
     cursor: pointer;
+    position:relative;
 
 }
+
 .right-section{
     width: 180px;
     display: flex;
@@ -105,6 +109,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    position: relative;
 }
 .video-add-icon{
     height: 24px;
@@ -114,6 +119,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    position: relative;
 }
 .bell-icon{
     height: 24px;
@@ -126,7 +132,9 @@
     border-radius: 16px;
     border: none;
     cursor: pointer;
+    position: relative;
 }
+
 .notification-container{
     position: relative;
 }
@@ -146,3 +154,52 @@
     padding-right: 3px;
     
 }
+
+.search-button,
+.voice-search-button,
+.video-add-btn,
+.bell-btn,
+.profile-btn
+{
+    position:relative;
+    display: flex;
+    /* flex default is row .. no need to specify */
+    flex-direction: row;
+    /* default  horizontaly alighned, in flex-direction:column vertically alighned*/
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.video-add-btn .tooltip,
+.bell-btn .tooltip,
+.profile-btn .tooltip
+{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 2px;
+    bottom: -24px;
+    /*default invisible */
+    opacity: 0; 
+    transition: opacity 1;
+    /* disable hover effect on tooltip element */
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+
+.voice-search-button:hover .tooltip,
+.search-button:hover .tooltip,
+.video-add-btn:hover .tooltip,
+.bell-btn:hover .tooltip,
+.profile-btn:hover .tooltip
+{
+    opacity: 1;
+}
+
