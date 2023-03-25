@@ -48,7 +48,6 @@
 }
 
 .search-bar::placeholder{
-    font-family: Roboto, Arial;
     font-size: 16px;
     
 }
@@ -140,7 +139,6 @@
 }
 .notification-count{
     font-size: 9px;
-    font-family: Roboto,Arial;
     font-weight: 500;
     background-color: red;
     color: white;

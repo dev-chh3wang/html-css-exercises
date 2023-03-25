@@ -4,9 +4,10 @@ body{
     padding-top: 80px;
     /* make space for sidebar */
     padding-left: 80px;
+    font-family: Roboto, Arial;
+    background-color: rgb(241, 241, 241);
 }
 p{
-    font-family: Roboto, Arial;
     margin-top: 0;
     margin-bottom: 0;
 }
